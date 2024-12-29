@@ -1,152 +1,188 @@
-[![Release](https://img.shields.io/badge/dynamic/json?color=blue&label=Release&query=tag_name&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmitre%2Fcaldera%2Freleases%2Flatest)](https://github.com/mitre/caldera/releases/latest)
-[![Testing Status](https://github.com/mitre/caldera/actions/workflows/quality.yml/badge.svg?branch=master)](https://github.com/mitre/caldera/actions/workflows/quality.yml?query=branch%3Amaster)
-[![Security Status](https://github.com/mitre/caldera/actions/workflows/security.yml/badge.svg?branch=master)](https://github.com/mitre/caldera/actions/workflows/security.yml?query=branch%3Amaster)
-[![codecov](https://codecov.io/gh/mitre/caldera/branch/master/graph/badge.svg)](https://codecov.io/gh/mitre/caldera)
+# MITRE Caldera™
+
+[![Release](https://img.shields.io/badge/dynamic/json?color=blue&label=Release&query=tag_name&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmitre%2Fcaldera%2Freleases%2Flatest)](https://github.com/mitre/caldera/releases/latest)  
+[![Testing Status](https://github.com/mitre/caldera/actions/workflows/quality.yml/badge.svg?branch=master)](https://github.com/mitre/caldera/actions/workflows/quality.yml?query=branch%3Amaster)  
+[![Security Status](https://github.com/mitre/caldera/actions/workflows/security.yml/badge.svg?branch=master)](https://github.com/mitre/caldera/actions/workflows/security.yml?query=branch%3Amaster)  
+[![codecov](https://codecov.io/gh/mitre/caldera/branch/master/graph/badge.svg)](https://codecov.io/gh/mitre/caldera)  
 [![Documentation Status](https://readthedocs.org/projects/caldera/badge/?version=stable)](http://caldera.readthedocs.io/?badge=stable)
 
-# MITRE Caldera&trade;
+## Overview
 
-MITRE Caldera&trade; is a cyber security platform designed to easily automate adversary emulation, assist manual red-teams, and automate incident response.
+**MITRE Caldera™** is a cybersecurity platform designed to:
+- Automate adversary emulation,
+- Assist manual red teams,
+- Automate incident response.
 
-It is built on the [MITRE ATT&CK™ framework](https://attack.mitre.org/) and is an active research project at MITRE.
+Caldera is built on the [MITRE ATT&CK™ framework](https://attack.mitre.org/) and is an active research project at MITRE.
 
-The framework consists of two components:
+---
 
-1) **The core system**. This is the framework code, consisting of what is available in this repository. Included is
-an asynchronous command-and-control (C2) server with a REST API and a web interface.
-2) **Plugins**. These repositories expand the core framework capabilities and providing additional functionality. Examples include agents, reporting, collections of TTPs and more.
+## Framework Components
 
-## Resources & Socials
-* 📜 [Documentation, training, and use-cases](https://caldera.readthedocs.io/en/latest/)
-* ✍️ [Caldera's blog](https://medium.com/@mitrecaldera/welcome-to-the-official-mitre-caldera-blog-page-f34c2cdfef09)
-* 🌐 [Homepage](https://caldera.mitre.org)
+### Core System
+The main framework, which includes:
+- An asynchronous command-and-control (C2) server,
+- A REST API,
+- A web interface.
+
+### Plugins
+Extend the framework’s capabilities with plugins for agents, reporting, TTPs, and more.
+
+---
+
+## Resources & Social Links
+- 📜 [Documentation](https://caldera.readthedocs.io/en/latest/)  
+- ✍️ [Caldera's Blog](https://medium.com/@mitrecaldera/welcome-to-the-official-mitre-caldera-blog-page-f34c2cdfef09)  
+- 🌐 [Homepage](https://caldera.mitre.org)  
+
+---
 
 ## Plugins
 
-:star: Create your own plugin! Plugin generator: **[Skeleton](https://github.com/mitre/skeleton)** :star:
+### Default Plugins
+Supported and maintained by the Caldera team:
+- **[Access](https://github.com/mitre/access)**: Initial access tools and techniques.
+- **[Atomic](https://github.com/mitre/atomic)**: Atomic Red Team TTPs.
+- **[Builder](https://github.com/mitre/builder)**: Compile payloads dynamically.
+- **[Compass](https://github.com/mitre/compass)**: ATT&CK visualizations.
+- **[Magma](https://github.com/mitre/magma)**: VueJS UI for Caldera v5.
+- **[Sandcat](https://github.com/mitre/sandcat)**: Default agent.
+- **[Stockpile](https://github.com/mitre/stockpile)**: Technique and profile storehouse.
+- **[Training](https://github.com/mitre/training)**: Training and certification resources.
 
-### Default
-These plugins are supported and maintained by the Caldera team.
-- **[Access](https://github.com/mitre/access)** (red team initial access tools and techniques)
-- **[Atomic](https://github.com/mitre/atomic)** (Atomic Red Team project TTPs)
-- **[Builder](https://github.com/mitre/builder)** (dynamically compile payloads)
-- **[Caldera for OT](https://github.com/mitre/caldera-ot)** (ICS/OT capabilities for Caldera)
-- **[Compass](https://github.com/mitre/compass)** (ATT&CK visualizations)
-- **[Debrief](https://github.com/mitre/debrief)** (operations insights)
-- **[Emu](https://github.com/mitre/emu)** (CTID emulation plans)
-- **[Fieldmanual](https://github.com/mitre/fieldmanual)** (documentation)
-- **[GameBoard](https://github.com/mitre/gameboard)** (visualize joint red and blue operations)
-- **[Human](https://github.com/mitre/human)** (create simulated noise on an endpoint)
-- **[Magma](https://github.com/mitre/magma)** (VueJS UI for Caldera v5)
-- **[Manx](https://github.com/mitre/manx)** (shell functionality and reverse shell payloads)
-- **[Response](https://github.com/mitre/response)** (incident response)
-- **[Sandcat](https://github.com/mitre/sandcat)** (default agent)
-- **[SSL](https://github.com/mitre/SSL)** (enable https for caldera)
-- **[Stockpile](https://github.com/mitre/stockpile)** (technique and profile storehouse)
-- **[Training](https://github.com/mitre/training)** (certification and training course)
+### Additional Plugins
+These plugins are not included by default and are not maintained by the Caldera team:
+- **[Arsenal](https://github.com/mitre-atlas/arsenal)**: ATLAS techniques and profiles.
+- **[Pathfinder](https://github.com/center-for-threat-informed-defense/caldera_pathfinder)**: Vulnerability scanning.
+- **[SAML](https://github.com/mitre/saml)**: SAML authentication.
 
-### More
-These plugins are ready to use but are not included by default and are not maintained by the Caldera team.
-- **[Arsenal](https://github.com/mitre-atlas/arsenal)** (MITRE ATLAS techniques and profiles)
-- **[CalTack](https://github.com/mitre/caltack.git)** (embedded ATT&CK website)
-- **[Pathfinder](https://github.com/center-for-threat-informed-defense/caldera_pathfinder)** (vulnerability scanning)
-- **[SAML](https://github.com/mitre/saml)** (SAML authentication)
+---
 
 ## Requirements
+- Linux or macOS.
+- Python 3.8+ (with Pip3).
+- Recommended: 8GB+ RAM and 2+ CPUs.
+- **Optional**: GoLang 1.17+ for compiling agents dynamically.
+- NodeJS (v16+ recommended for VueJS UI).
 
-These requirements are for the computer running the core framework:
-
-* Any Linux or MacOS
-* Python 3.8+ (with Pip3)
-* Recommended hardware to run on is 8GB+ RAM and 2+ CPUs
-* Recommended: GoLang 1.17+ to dynamically compile GoLang-based agents.
-* NodeJS (v16+ recommended for v5 VueJS UI) 
+---
 
 ## Installation
 
-Concise installation steps:
-```Bash
+### Quick Setup:
+```bash
 git clone https://github.com/mitre/caldera.git --recursive
 cd caldera
 pip3 install -r requirements.txt
 python3 server.py --insecure --build
-```
 
-Full steps:
-Start by cloning this repository recursively, passing the desired version/release in x.x.x format. This will pull in all available plugins.
-```Bash
+
+## Full Steps
+
+Start by cloning this repository recursively, passing the desired version/release in `x.x.x` format. This will pull in all available plugins.
+
+```bash
 git clone https://github.com/mitre/caldera.git --recursive --tag x.x.x
 ```
 
 Next, install the PIP requirements:
-```Bash
+
+```bash
 pip3 install -r requirements.txt
 ```
-**Super-power your Caldera server installation! [Install GoLang (1.19+)](https://go.dev/doc/install)**
 
-Finally, start the server.
-```Bash
+**Super-power your Caldera server installation!**  
+[Install GoLang (1.19+)](https://go.dev/doc/install) to enable advanced features.
+
+Finally, start the server:
+
+```bash
 python3 server.py --insecure --build
 ```
-The --build flag automatically installs any VueJS UI dependencies, bundles the UI into a dist directory, writes the Magma plugin's `.env` file, and is served by the Caldera server. You will only have to use the --build flag again if you add any plugins or make any changes to the UI.
-Once started, log into http://localhost:8888 using the default credentials red/admin. Then go into Plugins -> Training and complete the capture-the-flag style training course to learn how to use Caldera.
 
-In some situations the default configuration values can cause the UI to appear unresponsive due to misrouted requests. Modify the `app.frontend.api_base_url` config value and start the server using the --build flag to update the UI's request URL environment variable.
+The `--build` flag automatically installs any VueJS UI dependencies, bundles the UI into a `dist` directory, writes the Magma plugin's `.env` file, and serves it via the Caldera server. You only need to use the `--build` flag again if you add plugins or make changes to the UI.
 
-If you prefer to not use the new VueJS UI, revert to Caldera v4.2.0. Correspondingly, do not use the `--build` flag for earlier versions as not required.
+Once the server is started, log in at [http://localhost:8888](http://localhost:8888) using the default credentials `red/admin`. Then, go to Plugins -> Training and complete the capture-the-flag style training course to learn how to use Caldera.
 
-### User Interface Development
+In some cases, the default configuration values may cause the UI to appear unresponsive due to misrouted requests. Modify the `app.frontend.api_base_url` config value and restart the server with the `--build` flag to update the UI's request URL environment variable.
 
-If you'll be developing the UI, there are a few more additional installation steps.
+If you prefer not to use the new VueJS UI, revert to Caldera v4.2.0. For earlier versions, the `--build` flag is not required.
 
-**Requirements**  
-* NodeJS (v16+ recommended)
+---
 
-**Setup**
+## User Interface Development
 
-1. Add the Magma submodule if you haven't already: `git submodule add https://github.com/mitre/magma`
-1. Install NodeJS dependencies: `cd plugins/magma && npm install && cd ..`
-1. Start the Caldera server with an additional flag: `python3 server.py --uidev localhost`
+If you'll be developing the UI, additional setup steps are required.
 
-Your Caldera server is available at http://localhost:8888 as usual, but there will now be a hot-reloading development server for the VueJS front-end available at http://localhost:3000. Both logs from the server and the front-end will display in the terminal you launched the server from.
+### Requirements
+- NodeJS (v16+ recommended)
+
+### Setup
+
+1. Add the Magma submodule (if not already added):
+   ```bash
+   git submodule add https://github.com/mitre/magma
+   ```
+2. Install NodeJS dependencies:
+   ```bash
+   cd plugins/magma && npm install && cd ..
+   ```
+3. Start the Caldera server with an additional flag:
+   ```bash
+   python3 server.py --uidev localhost
+   ```
+
+Your Caldera server will be available at [http://localhost:8888](http://localhost:8888), but there will also be a hot-reloading development server for the VueJS front-end at [http://localhost:3000](http://localhost:3000). Logs from both the server and the front-end will appear in the terminal where you launched the server.
+
+---
 
 ## Docker Deployment
-To build a Caldera docker image, ensure you have docker installed and perform the following actions:
-```Bash
-# Recursively clone the Caldera repository if you have not done so
+
+To build a Caldera Docker image, ensure Docker is installed and follow these steps:
+
+```bash
+# Recursively clone the Caldera repository (if not already done)
 git clone https://github.com/mitre/caldera.git --recursive
 
-# Build the docker image. Change image tagging as desired.
-# WIN_BUILD is set to true to allow Caldera installation to compile windows-based agents.
-# Alternatively, you can use the docker compose YML file via "docker-compose build"
+# Build the Docker image (customize tagging as needed)
+# WIN_BUILD allows Caldera to compile Windows-based agents.
 cd caldera
 docker build . --build-arg WIN_BUILD=true -t caldera:latest
 
-# Run the image. Change port forwarding configuration as desired.
+# Run the Docker image (customize port forwarding as needed)
 docker run -p 8888:8888 caldera:latest
 ```
 
-To gracefully terminate your docker container, do the following:
-```Bash
-# Find the container ID for your docker container running Caldera
+To gracefully terminate your Docker container:
+
+```bash
+# List all running containers
 docker ps
 
 # Stop the container
 docker stop [container ID]
 ```
 
+---
+
 ## Contributing
 
-Refer to our [contributor documentation](CONTRIBUTING.md).
+Refer to the [contributor documentation](CONTRIBUTING.md) for guidelines on how to contribute.
+
+---
 
 ## Vulnerability Disclosures
 
-Refer to our [Vulnerability Disclosure Documentation](SECURITY.md) for submitting bugs.
+Refer to the [Vulnerability Disclosure Documentation](SECURITY.md) for submitting bugs or security issues.
+
+---
 
 ## Licensing
 
-To discuss licensing opportunities, please reach out to caldera@mitre.org or directly to [MITRE's Technology Transfer Office](https://www.mitre.org/about/corporate-overview/contact-us#technologycontact).
+For licensing opportunities, please reach out via email to [caldera@mitre.org](mailto:caldera@mitre.org) or contact [MITRE's Technology Transfer Office](https://www.mitre.org/about/corporate-overview/contact-us#technologycontact).
+
+---
 
 ## Caldera Benefactor Program
 
-If you are interested in partnering to support, sustain, and evolve MITRE Caldera&trade;'s open source capabilities, please contact us at caldera@mitre.org.
+If you are interested in supporting, sustaining, or evolving MITRE Caldera™'s open-source capabilities, please contact us at [caldera@mitre.org](mailto:caldera@mitre.org).
